@@ -20,7 +20,7 @@ jobs:
       run: |
         cd build
         set CL=/MP
-        nmake release
+        nmake
     - name: test
       run: build/tests.exe
     - uses: actions/upload-artifact@master
