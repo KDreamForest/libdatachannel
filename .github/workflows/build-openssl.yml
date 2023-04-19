@@ -53,4 +53,8 @@ jobs:
         nmake
     - name: test
       run: build/tests.exe
+    - uses: actions/upload-artifact@master
+      with:
+          name: BUILD
+          path: build
 
